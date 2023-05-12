@@ -6,9 +6,9 @@ const resolvers = {
         // grid of our client
         // (parent, args, contextValue, info)
         // deconstruct dataSources from contextVal
-        tracksForHomePage: (_, __, { dataSources }) => {
+        tracksForHome: (_, __, { dataSources }) => {
             // interacts with our data source
-            return dataSources.trackAPI.getTracksForHomePage()
+            return dataSources.trackAPI.getTracksForHomepage()
         }
     },
     // indicates this is for the Track type in the schema
